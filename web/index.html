@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#9b1b48">
+    <meta name="description" content="دعوة زفاف ناسم وكريستينا">
+    <title>دعوة زفاف ناسم وكريستينا</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main><canvas id="petals" aria-hidden="true"></canvas>
+        <section id="invitation" class="invitation" aria-hidden="true"><button id="music-toggle" class="music-toggle"
+                type="button" aria-label="إيقاف الموسيقى">♫</button>
+            <div class="page-content">
+                <article class="name-card framed"><img src="assets/card_names.png" alt="ناسم وكريستينا"></article>
+                <div class="scroll-cue" aria-hidden="true">⌄</div>
+                <section class="reveal invite-copy">
+                    <p>وبهذه المناسبة يتشرف كلاً من</p>
+                    <div class="ornament">♥</div>
+                    <div class="parents"><strong>السيد / سمير فؤاد ملك</strong><strong>السيد / ناجح فايز بشرى</strong>
+                    </div>
+                    <p>بدعوة سيادتكم والعائلة لحضور</p>
+                    <h1>حفل زفاف</h1>
+                </section>
+                <section class="reveal countdown-section">
+                    <h2>العد التنازلي لفرحتنا</h2>
+                    <div class="countdown" dir="ltr">
+                        <div><b id="days">00</b><span>يوم</span></div><i>:</i>
+                        <div><b id="hours">00</b><span>ساعة</span></div><i>:</i>
+                        <div><b id="minutes">00</b><span>دقيقة</span></div><i>:</i>
+                        <div><b id="seconds">00</b><span>ثانية</span></div>
+                    </div>
+                </section>
+                <section class="reveal gallery">
+                    <div class="heart" aria-hidden="true">♥</div>
+                    <blockquote>عمر واحد...<br>واخترتك معايا</blockquote>
+                    <div class="arch-photo"><img id="couple-photo" src="assets/couple_1.jpeg" alt="صورة العروسين"></div>
+                </section>
+                <section class="reveal cards-section">
+                    <h2>كروت الدعوة</h2>
+                    <p>اضغط على الكارت لتكبيره</p>
+                    <div class="cards" aria-label="بطاقات الدعوة"><button type="button"
+                            data-image="assets/card_rose.jpeg"><img src="assets/card_rose.jpeg"
+                                alt="كارت دعوة وردي"></button><button type="button"
+                            data-image="assets/card_green.jpeg"><img src="assets/card_green.jpeg"
+                                alt="كارت دعوة أخضر"></button></div>
+                </section>
+                <section class="details">
+                    <h2>تفاصيل الحفل</h2>
+                    <article class="reveal venue"><span>⌖</span>
+                        <h3>صلاة الإكليل</h3>
+                        <p>كاتدرائية القديس مارمرقس الرسول<br>برزقة الدير المحرق</p><strong>الأحد 15.11.2026 - الساعة
+                            5:00 مساءً</strong><a href="https://maps.app.goo.gl/aqqy4UiPGPnCx5N39" target="_blank"
+                            rel="noopener">⌖ افتح الخريطة</a>
+                    </article>
+                    <article class="reveal venue"><span>⌖</span>
+                        <h3>حفل الحنة المشتركة</h3>
+                        <p>شارع مصنع البلاط امام المطافى</p><strong>الجمعة 13.11.2026</strong><a
+                            href="https://maps.app.goo.gl/QnWBsyB8ZCUU4qiy7" target="_blank" rel="noopener">⌖ افتح
+                            الخريطة</a>
+                    </article>
+                </section>
+                <footer class="reveal">
+                    <p>في انتظاركم</p>
+                    <div>Nassem &amp; Christina</div><strong>15.11.2026</strong>
+                </footer>
+                <section class="reveal closing-image">
+                    <img src="assets/Finish.png" alt="ختام الدعوة">
+                </section>
+            </div>
+        </section>
+        <section id="gate" class="gate" role="button" tabindex="0" aria-label="اضغط لفتح دعوتك">
+            <div class="envelope top"></div>
+            <div class="envelope bottom"></div>
+            <div class="seal-glow"></div>
+            <div class="seal-burst" aria-hidden="true"></div>
+            <p>اضغط لفتح دعوتك</p>
+        </section>
+    </main>
+    <dialog id="lightbox"><button type="button" aria-label="إغلاق">×</button><img alt="كارت الدعوة بحجم كامل"></dialog>
+    <audio id="wedding-song" src="assets/songwed.mp3" loop preload="auto"></audio>
+    <script src="app.js"></script>
+</body>
+
+</html>
